@@ -1,5 +1,5 @@
 ## Página de portfólio
-Projeto criado durante a realização do curso Sistemas para Internet.
+Projeto criado durante a realização do curso Sistemas para Internet do IFTO - Instituto Federal do Tocantins, ministrado pelo professor Mauro Henrique Lima de Boni.
 
 Foram utilizadas as seguintes tecnologias: 
 - HTML
