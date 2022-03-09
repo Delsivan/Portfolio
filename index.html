@@ -8,7 +8,68 @@
     <title>Delsivan</title>
 
     <style>
-        body{background: #e0edfa; font-family: Arial, sans-serif}
+
+        body{
+            background: #e0edfa; 
+            font-family: Arial, sans-serif
+        }
+        
+        fieldset{
+            margin:0 auto;
+            width: 420px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+            background: #c4dffa;
+            
+        }
+        legend{
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;            
+        }
+        li{
+            display: flex;
+            flex-direction: row;
+        }
+
+        form {
+            margin: 1em auto; 
+        }
+
+        form li+li {
+            margin-top: 1em; 
+        }
+
+        label {
+            /* Uniform size e alignment */
+            display: inline-block;
+            text-align: right;
+        }
+
+        input, 
+        textarea {
+            /* Garante que todos os campos de texto tem a mesma fonte */
+            font: 1em sans-serif;
+            width:300px;
+            border: 1px solid #999;
+        }
+
+        input[type=submit],
+        textarea {
+            margin-left: 50px;
+            margin-bottom: 1em;
+        }
+
+        input[type=submit]{
+            background-color: #50fa7b;
+        }
     </style>
 
 </head>
@@ -88,6 +149,27 @@
             </tbody>
         </table>
     </section>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Entre em Contato</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" nome="nomeUsuario">
+                </li>
+                <li>
+                    <label for="email">E-mail: </label>
+                    <input type="text" id="email" nome="emailUsuario">
+                </li>
+                <li>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Envie sugestões, elogios e critícas"></textarea>
+                </li>
+            </ul>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
 
     <footer>&copy; Copyright 2022 Portfólio - Todos os direitos reservados</footer>
 
