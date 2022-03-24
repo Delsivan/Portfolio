@@ -58,6 +58,7 @@ textarea {
     /* Garante que todos os campos de texto tem a mesma fonte */
     font: 1em sans-serif;
     width:300px;
+    box-sizing: border-box;
     border: 1px solid #999;
 }
 
