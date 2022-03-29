@@ -1,17 +1,40 @@
-body{
-    background: #e0edfa; 
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+*{
+    padding: 0;
+    
 }
 
-h1 {
-    font-size: 30px;
+body{
+    background: #f5f6fd;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
 
 img {
     border-radius: 50%; 
     border: 5px solid #50fa7b; 
-    max-width: 200px; max-height: 200px;
+    max-width: 200px; 
+    max-height: 200px;
+    
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+h1, h2 {
+    text-align: center;
+    color: #093366;
+}
+
+h1 { 
+    font-size: 30px;
+}
+
+p, blockquote{
+    text-align: center;
+    color: #444;
 }
 
 form {
@@ -24,23 +47,40 @@ fieldset{
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-    background: #c4dffa;
-    
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(120 135 182 / 30%);
 }
-legend{
+p.emphasis, legend{
     font-weight: bold;
+    color: #167bf7;
 }
+
+  th{
+    background-color: #EEE;
+  }
+  
+  table{
+    width: 64%;
+    margin:auto;
+    text-align: center;
+  }
+
+  ol{
+    margin: 0 auto;
+    width: 50px;
+  }
 
 ul {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    list-style: square;
     padding: 0;
-    margin: 0;            
+    margin: 0;           
 }
 li{
     display: flex;
     flex-direction: row;
+    margin: 1em auto;
 }
 
 form li+li {
@@ -51,6 +91,7 @@ label {
     /* Uniform size e alignment */
     display: inline-block;
     text-align: right;
+    color: #444;
 }
 
 input, 
@@ -69,5 +110,34 @@ textarea {
 }
 
 input[type=submit]{
+    border: none;
+    border-radius: 2.5em;;
+    padding: 12px 18px;
+    outline: none;
+    color: #051933;
+    background-color: #a3ffbf;
+    font-weight: 700;
+    
+    font-size: 14px;
+    box-shadow: 2px 4px #999;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
     background-color: #50fa7b;
+}
+
+input[type=submit]:active{
+    background-color: #50fa7b;
+    box-shadow: 0px 2px #999;
+    transform: translateY(4px);
+}
+
+footer {
+    background: #051933;
+    text-align: center;
+    color: #ffff;
+    margin-top: auto;
+    width: 100%;
+    padding: 32px 0;
 }
