@@ -13,7 +13,21 @@
 
 <body>
     <header>
-        <a href="index.html">Página Inicial</a></li>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Ementa
+                        <ul>
+                            <li><a href="ementaFPB.html">Fundamentos e Projeto de Banco de Dados</a></li>
+                            <li><a href="ementaIPG.html">Introdução à Programação</a></li>
+                            <li><a href="ementaPEW.html">Programação Básica para Web</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="#links-footer">Contato</a></li>
+            </ul>
+          </nav>
     </header>
     
     <h1>Ementa da Disciplina: Introdução à Programação - 2º SEMESTRE</h1>
@@ -40,7 +54,7 @@
    
                 
     <h2>Competência:</h2>
-    <ul>
+    <ul class="secao-competencia">
         <li>Conhecer os métodos para construção e representação de algoritmos e programas;</li>
         <li>Compreender a estrutura de funções;</li>
         <li>Conhecer os métodos de manipulação e acesso a arquivos;</li>
@@ -48,7 +62,7 @@
     </ul>             
     
     <h2>Habilidades:</h2>  
-    <ul>
+    <ul class="secao-habilidades">
         <li>Utilização de estruturas de controle;</li>
         <li>Manipulação de variáveis simples e compostas;</li>
         <li>Desenvolvimento de programas por meio de modularização;</li>
@@ -56,7 +70,33 @@
         <li>Utilização de arquivos do tipo texto, para leitura e escrita.</li>
     </ul>  
     
-    <footer>&copy; Copyright 2022 Portfólio - Todos os direitos reservados</footer>
-             
+    <footer>
+        &copy; Copyright 2022 Portfólio - Todos os direitos reservados
+
+        <section>
+            <div id="links-footer" class="links">
+                <a href="https://github.com/Delsivan" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/github.png" alt="Github" title="Github">
+                    </div>
+                </a>
+                <a href="https://twitter.com/Delsivan2" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/twitter.png" alt="Twitter" title="Twitter">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/delsivan_/?hl=pt-br" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/instagram.png" alt="Instagram" title="Instagram">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/delsivan-nascimento-vieira-8b089784/" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/linkedin.png" alt="Linkedin" title="Linkedin">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

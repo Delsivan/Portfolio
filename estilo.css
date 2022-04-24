@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    text-decoration: none;
     
 }
 
@@ -7,20 +8,80 @@ body{
     background: #f5f6fd;
     font-family: Arial, sans-serif;
     font-size: 12px;
+    line-height: 1.5;
 }
 
-img {
+/* MENU  */
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    position: none;
+    top: 0;
+    background: #051933;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding:14px 16px;
+    list-style: none;
+    position: none;
+}
+
+.menu > li {
+    height: 20px;
+    width:170px;
+}
+
+.menu li a{
+    color: #ffff;
+    text-decoration:none;  
+}
+
+
+    .menu ul {
+        position:absolute;
+        top:50px;
+        background-color:rgb(5, 25, 51);
+        display:none;
+        width: 170px;
+        list-style: none;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu ul li:hover {
+        background: white;
+        color:black;
+        cursor:pointer;
+    }
+
+    .menu ul li:hover > a {
+        color: black
+    }
+  
+    .menu li:hover ul {
+        display:block;
+    }
+    
+.biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.biografia img {
     border-radius: 50%; 
     border: 5px solid #50fa7b; 
     max-width: 200px; 
-    max-height: 200px;
-    
-}
-
-img.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+    max-height: 200px; 
 }
 
 h1, h2 {
@@ -37,9 +98,18 @@ p, blockquote{
     color: #444;
 }
 
+.secao-formulario {
+    display: flex;
+    justify-content:center;
+    margin: 30px 0;
+}
+
 form {
-    margin: 1em auto; 
-    width: 350px;
+    width: 370px;
+}
+
+form ul li {
+    display: block;
 }
 
 fieldset{
@@ -70,14 +140,14 @@ p.emphasis, legend{
     width: 50px;
   }
 
-ul {
+table ul {
     display: flex;
     flex-direction: column;
     list-style: square;
     padding: 0;
     margin: 0;           
 }
-li{
+table li{
     display: flex;
     flex-direction: row;
     margin: 1em auto;
@@ -133,6 +203,14 @@ input[type=submit]:active{
     transform: translateY(4px);
 }
 
+.secao-competencia{
+    text-align: center;
+}
+
+.secao-habilidades{
+    text-align: center;
+}
+
 footer {
     background: #051933;
     text-align: center;
@@ -141,3 +219,22 @@ footer {
     width: 100%;
     padding: 32px 0;
 }
+
+#links-footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#links-footer a .icons {
+    display: flex;
+    align-items: center;
+}
+#links-footer a .icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+    
